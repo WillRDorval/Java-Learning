@@ -61,5 +61,6 @@ public abstract class block {
         mass = volume*getDensity();
     }
     abstract float getDensity();
-
+    abstract float getPower();
+    abstract float getHealth();
 }

@@ -1,7 +1,8 @@
 package com.aredowl.materials;
 
 public abstract class material {
-    abstract int getMass();
-    abstract float getCreditMultiplier();
-    abstract float getCost();
+    public abstract int getMass();
+    public abstract float getCreditMultiplier();
+    public abstract float getCost();
+    public abstract float getHealthMultiplier();
 }
