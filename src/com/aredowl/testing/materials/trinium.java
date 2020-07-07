@@ -1,28 +1,28 @@
-package com.aredowl.materials;
+package com.aredowl.testing.materials;
 
-public class xanion extends material{
+public class trinium extends material{
     @Override
     public int getMass() {
-        return 27;
+        return 21;
     }
 
     @Override
     public float getCreditMultiplier() {
-        return (float) Math.pow(1.35, 4);
+        return (float) Math.pow(1.35, 3);
     }
 
     @Override
     public float getCost() {
-        return 21.3f;
+        return 16.8f;
     }
 
     @Override
     public float getHealthMultiplier() {
-        return (float) Math.pow(1.5, 4);
+        return (float) Math.pow(1.5, 3);
     }
 
     @Override
     public int getTier() {
-        return 5;
+        return 4;
     }
 }

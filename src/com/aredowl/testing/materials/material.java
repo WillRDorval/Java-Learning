@@ -1,4 +1,4 @@
-package com.aredowl.materials;
+package com.aredowl.testing.materials;
 
 public abstract class material {
     public abstract int getMass();

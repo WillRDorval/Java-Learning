@@ -1,28 +1,28 @@
-package com.aredowl.materials;
+package com.aredowl.testing.materials;
 
-public class naonite extends material{
+public class avorion extends material{
     @Override
     public int getMass() {
-        return 33;
+        return 36;
     }
 
     @Override
     public float getCreditMultiplier() {
-        return (float) Math.pow(1.35, 2);
+        return (float) Math.pow(1.35, 6);
     }
 
     @Override
     public float getCost() {
-        return 11.3f;
+        return 27.4f;
     }
 
     @Override
     public float getHealthMultiplier() {
-        return (float) Math.pow(1.5, 2);
+        return (float) Math.pow(1.5, 6);
     }
 
     @Override
     public int getTier() {
-        return 3;
+        return 7;
     }
 }

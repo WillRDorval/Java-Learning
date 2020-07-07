@@ -1,4 +1,4 @@
-package com.aredowl.materials;
+package com.aredowl.testing.materials;
 
 public class ogonite extends material{
     @Override

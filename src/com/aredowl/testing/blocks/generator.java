@@ -1,6 +1,6 @@
-package com.aredowl.blocks;
+package com.aredowl.testing.blocks;
 
-import com.aredowl.materials.material;
+import com.aredowl.testing.materials.material;
 
 public class generator extends block {
     private final int tier;
