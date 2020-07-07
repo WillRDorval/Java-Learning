@@ -5,4 +5,5 @@ public abstract class material {
     public abstract float getCreditMultiplier();
     public abstract float getCost();
     public abstract float getHealthMultiplier();
+    public abstract int getTier();
 }
