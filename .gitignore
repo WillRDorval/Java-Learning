@@ -7,7 +7,9 @@
 # Editor-based HTTP Client requests
 /httpRequests/
 # compiled and compressed file types
-*.jar, *.class, *.ear
+*.jar
+*.class
+*.ear
 #formatting files
 .idea
 *.iml
