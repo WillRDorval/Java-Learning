@@ -48,4 +48,10 @@ public abstract class block {
     abstract public float getDensity();
     abstract public float getPower();
     abstract public float getHealth();
+    public float getThrust(){
+        return 0f;
+    }
+    public float getShield(){
+        return 0f;
+    }
 }
