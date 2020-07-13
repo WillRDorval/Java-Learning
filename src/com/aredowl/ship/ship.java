@@ -30,10 +30,37 @@ public class ship {
         parentMap.put(index, parent);
         thrust += block.getThrust();
         health += block.getHealth();
-        mass += block.getMass();
         power += block.getPower();
         shield += block.getShield();
         mass += block.getMass();
         volume += block.getVolume();
+    }
+
+    public float getCost() {
+        return cost;
+    }
+
+    public float getHealth() {
+        return health;
+    }
+
+    public float getMass() {
+        return mass;
+    }
+
+    public float getPower() {
+        return power;
+    }
+
+    public float getShield() {
+        return shield;
+    }
+
+    public float getThrust() {
+        return thrust;
+    }
+
+    public float getVolume() {
+        return volume;
     }
 }

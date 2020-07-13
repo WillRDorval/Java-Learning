@@ -45,4 +45,11 @@ public class xmlTests {
         assert block.getDensity()== 25.5f;
         assert block.getPower()== 400000f*block.getVolume();
     }
+    @Test
+    public void shipMakerTest1() throws IOException, SAXException {
+        ship ship = shipMaker.fromXML(path);
+        System.out.println(ship.getMass());
+        assert ship.getMass()==612000f;
+        assert ship.getHealth()==48000f;
+    }
 }
