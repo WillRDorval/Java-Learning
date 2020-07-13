@@ -36,13 +36,13 @@ public class xmlTests {
         Element testItem = (Element) nList.item(0);
         Element testBlock = (Element) testItem.getElementsByTagName("block").item(0);
         block block = blockMaker.fromXML(testBlock);
-        assert block.getVolume()== 8f;
+        assert block.getVolume()== 8000f;
         assert block.getDensity()== 51f;
         testItem = (Element) nList.item(1);
         testBlock = (Element) testItem.getElementsByTagName("block").item(0);
         block = blockMaker.fromXML(testBlock);
-        assert block.getVolume()== 8f;
+        assert block.getVolume()== 8000f;
         assert block.getDensity()== 25.5f;
-        assert block.getPower()== 400000f;
+        assert block.getPower()== 400000f*block.getVolume();
     }
 }
