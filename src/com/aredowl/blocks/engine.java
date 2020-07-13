@@ -21,7 +21,7 @@ public class engine extends block{
 
     @Override
     public float getPower() {
-        return (float) ((400000/0.95)*Math.pow(0.95, tier));
+        return (float) ((400000/0.95)*Math.pow(0.95, tier))*getVolume();
     }
 
     @Override
