@@ -19,12 +19,12 @@ public abstract class blockMaker {
 
     public static block fromXML(Element block){
         block out;
-        float lx = Float.parseFloat(block.getAttribute("lx"));
-        float ux = Float.parseFloat(block.getAttribute("ux"));
-        float ly = Float.parseFloat(block.getAttribute("ly"));
-        float uy = Float.parseFloat(block.getAttribute("uy"));
-        float lz = Float.parseFloat(block.getAttribute("lz"));
-        float uz = Float.parseFloat(block.getAttribute("uz"));
+        float lx = Float.parseFloat(block.getAttribute("lx"))*10;
+        float ux = Float.parseFloat(block.getAttribute("ux"))*10;
+        float ly = Float.parseFloat(block.getAttribute("ly"))*10;
+        float uy = Float.parseFloat(block.getAttribute("uy"))*10;
+        float lz = Float.parseFloat(block.getAttribute("lz"))*10;
+        float uz = Float.parseFloat(block.getAttribute("uz"))*10;
         int index = Integer.parseInt(block.getAttribute("index"));
         int material = Integer.parseInt(block.getAttribute("material"));
         material materialUsed;
