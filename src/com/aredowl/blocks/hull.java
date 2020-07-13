@@ -13,17 +13,17 @@ public class hull extends block {
     }
 
     @Override
-    float getDensity() {
+    public float getDensity() {
         return density;
     }
 
     @Override
-    float getPower() {
+    public float getPower() {
         return 0.5f*getVolume();
     }
 
     @Override
-    float getHealth() {
+    public float getHealth() {
         return healthMod*getVolume();
     }
 }

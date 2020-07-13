@@ -15,17 +15,17 @@ public class engine extends block{
     }
 
     @Override
-    float getDensity() {
+    public float getDensity() {
         return density;
     }
 
     @Override
-    float getPower() {
+    public float getPower() {
         return (float) ((400000/0.95)*Math.pow(0.95, tier));
     }
 
     @Override
-    float getHealth() {
+    public float getHealth() {
         return healthMod*getVolume();
     }
 

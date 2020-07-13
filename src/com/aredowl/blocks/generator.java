@@ -15,17 +15,17 @@ public class generator extends block {
     }
 
     @Override
-    float getDensity() {
+    public float getDensity() {
         return density;
     }
 
     @Override
-    float getPower() {
+    public float getPower() {
         return -1875*(40+3*tier+tier*tier);
     }
 
     @Override
-    float getHealth() {
+    public float getHealth() {
         return healthMod*getVolume();
     }
 }

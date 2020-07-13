@@ -17,7 +17,7 @@ import org.xml.sax.SAXException;
 
 public abstract class blockMaker {
 
-    public block fromXML(Element block){
+    public static block fromXML(Element block){
         block out;
         float lx = Float.parseFloat(block.getAttribute("lx"));
         float ux = Float.parseFloat(block.getAttribute("ux"));
