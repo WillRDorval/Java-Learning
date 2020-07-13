@@ -12,6 +12,7 @@ public class engine extends block{
         density = 0.5f*material.getMass();
         healthMod = 0.5f*4*material.getHealthMultiplier();
         tier = material.getTier();
+        updateMass();
     }
 
     @Override

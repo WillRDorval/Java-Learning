@@ -24,7 +24,6 @@ public abstract class block {
         this.y = uy-ly;
         this.z = uz-lz;
         volume = x*y*z;
-        mass = volume*getDensity();
     }
     final public float getVolume(){
         return volume;
@@ -43,6 +42,9 @@ public abstract class block {
         this.y = uy-ly;
         this.z = uz-lz;
         volume = x*y*z;
+        mass = volume*getDensity();
+    }
+    public void updateMass(){
         mass = volume*getDensity();
     }
     abstract public float getDensity();

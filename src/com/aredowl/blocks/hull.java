@@ -10,6 +10,7 @@ public class hull extends block {
         super(lx, ux, ly, uy, lz, uz);
         density = material.getMass();
         healthMod = 4*material.getHealthMultiplier();
+        updateMass();
     }
 
     @Override

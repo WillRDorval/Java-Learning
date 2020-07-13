@@ -12,6 +12,7 @@ public class generator extends block {
         density = 1.33f*material.getMass();
         healthMod = 0.125f*4*material.getHealthMultiplier();
         tier = material.getTier()-1;
+        updateMass();
     }
 
     @Override

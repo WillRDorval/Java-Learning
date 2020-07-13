@@ -10,6 +10,7 @@ public class armour extends block{
         super(lx, ux, ly, uy, lz, uz);
         density = 1.66f*material.getMass();
         healthMod = 3.75f*4*material.getHealthMultiplier();
+        updateMass();
     }
 
     @Override
