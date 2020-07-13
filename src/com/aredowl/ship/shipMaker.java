@@ -1,4 +1,4 @@
-package com.aredowl.testing.ship;
+package com.aredowl.ship;
 
 import java.util.logging.*;
 import java.io.File;
@@ -27,16 +27,16 @@ public abstract class shipMaker {
         }
     }
 
-    public ship fromXML(String path) throws IOException, SAXException {
+    static public ship fromXML(String path) throws IOException, SAXException {
         File inFile = new File(path);
         Document doc = dBuilder.parse(inFile);
         NodeList nList = doc.getElementsByTagName("item");
         for(int i=0; i < nList.getLength(); i++){
             Node item = nList.item(i);
             Element block = (Element) item;
-            logger.log(Level.INFO,"Block Element", block);
+            logger.log(Level.INFO,"Block Element" + block.getAttribute("index"));
             Element part = (Element) block.getElementsByTagName("block").item(0);
-            logger.log(Level.INFO,"Part Element", part);
+            logger.log(Level.INFO,"Part Element" + part.getAttribute("index"));
         }
         ship ship = new ship();
         return ship;

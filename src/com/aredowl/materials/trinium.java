@@ -1,4 +1,4 @@
-package com.aredowl.testing.materials;
+package com.aredowl.materials;
 
 public class trinium implements material{
     public int getMass() {

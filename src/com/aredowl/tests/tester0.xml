@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ship_design>
+	<plan accumulateHealth="true" convex="false">
+		<item parent="-1" index="0">
+			<block lx="-1" ly="-1" lz="-1" ux="1" uy="1" uz="1" index="1" material="0" look="1" up="3" color="ffbfaea3"/>
+		</item>
+		<item parent="0" index="1">
+			<block lx="-1" ly="1" lz="-1" ux="1" uy="3" uz="1" index="3" material="0" look="1" up="3" color="ffbfaea3"/>
+		</item>
+	</plan>
+</ship_design>

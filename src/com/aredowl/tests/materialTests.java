@@ -1,7 +1,8 @@
-package com.aredowl.testing.tests;
+package com.aredowl.tests;
 
+import com.aredowl.materials.*;
 import org.testng.annotations.*;
-import com.aredowl.testing.materials.*;
+import com.aredowl.materials.*;
 
 public class materialTests {
     private material Titanium;

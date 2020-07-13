@@ -1,4 +1,4 @@
-package com.aredowl.testing.materials;
+package com.aredowl.materials;
 
 public class avorion implements material{
     public int getMass() {

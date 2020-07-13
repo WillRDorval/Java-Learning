@@ -1,4 +1,4 @@
-package com.aredowl.testing.materials;
+package com.aredowl.materials;
 
 public class titanium implements material{
     public int getMass() {

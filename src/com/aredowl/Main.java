@@ -1,4 +1,4 @@
-package com.aredowl.testing;
+package com.aredowl;
 
 public class Main {
 

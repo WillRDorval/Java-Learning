@@ -1,6 +1,6 @@
-package com.aredowl.testing.ship;
+package com.aredowl.ship;
 
-import com.aredowl.testing.materials.material;
+import com.aredowl.materials.material;
 
 import java.util.*;
 

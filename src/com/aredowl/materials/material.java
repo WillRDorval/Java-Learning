@@ -1,4 +1,4 @@
-package com.aredowl.testing.materials;
+package com.aredowl.materials;
 
 public interface material {
     int getMass();

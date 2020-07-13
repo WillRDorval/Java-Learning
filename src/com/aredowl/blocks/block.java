@@ -1,4 +1,4 @@
-package com.aredowl.testing.blocks;
+package com.aredowl.blocks;
 
 public abstract class block {
     private  int l;
