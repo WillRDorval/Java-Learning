@@ -6,8 +6,8 @@ public class armour extends block{
     private final float density;
     private final float healthMod;
 
-    public armour(int l, int w, int h, material material){
-        super(l, w, h);
+    public armour(float lx, float ux, float ly, float uy, float lz, float uz, material material){
+        super(lx, ux, ly, uy, lz, uz);
         density = 1.66f*material.getMass();
         healthMod = 3.75f*4*material.getHealthMultiplier();
     }

@@ -7,8 +7,8 @@ public class engine extends block{
     private final float density;
     private final float healthMod;
 
-    public engine(int l, int w, int h, material material){
-        super(l, w, h);
+    public engine(float lx, float ux, float ly, float uy, float lz, float uz, material material){
+        super(lx, ux, ly, uy, lz, uz);
         density = 0.5f*material.getMass();
         healthMod = 0.5f*4*material.getHealthMultiplier();
         tier = material.getTier();

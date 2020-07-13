@@ -7,8 +7,8 @@ public class generator extends block {
     private final float density;
     private final float healthMod;
 
-    public generator(int l, int w, int h, material material){
-        super(l, w, h);
+    public generator(float lx, float ux, float ly, float uy, float lz, float uz, material material){
+        super(lx, ux, ly, uy, lz, uz);
         density = 1.33f*material.getMass();
         healthMod = 0.125f*4*material.getHealthMultiplier();
         tier = material.getTier()-1;

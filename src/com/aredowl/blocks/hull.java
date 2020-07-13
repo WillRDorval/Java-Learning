@@ -6,8 +6,8 @@ public class hull extends block {
     private final float density;
     private final float healthMod;
 
-    public hull(int l, int w, int h, material material){
-        super(l, w, h);
+    public hull(float lx, float ux, float ly, float uy, float lz, float uz, material material){
+        super(lx, ux, ly, uy, lz, uz);
         density = material.getMass();
         healthMod = 4*material.getHealthMultiplier();
     }
