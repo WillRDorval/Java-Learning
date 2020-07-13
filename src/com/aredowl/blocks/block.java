@@ -1,63 +1,48 @@
 package com.aredowl.blocks;
 
 public abstract class block {
-    private  int l;
-    private int w;
-    private int h;
-    private int volume;
+    private float x;
+    private float z;
+    private float y;
+    private float lx;
+    private float ux;
+    private float ly;
+    private float uy;
+    private float lz;
+    private float uz;
+    private float volume;
     private float mass;
 
-    public block(int l,int  w,int h){
-        volume = l*w*h;
-        this.h = h;
-        this.w = w;
-        this.l = l;
+    public block(float lx, float ux, float ly, float uy, float lz, float uz){
+        this.lx = lx;
+        this.ux = ux;
+        this.ly = ly;
+        this.uy = uy;
+        this.lz = lz;
+        this.uz = uz;
+        this.x = ux-lx;
+        this.y = uy-ly;
+        this.z = uz-lz;
+        volume = x*y*z;
         mass = volume*getDensity();
     }
-    final public int getVolume(){
+    final public float getVolume(){
         return volume;
     }
     final public float getMass(){
         return mass;
     }
-    final public void setSide(int length, char side){
-        switch (side){
-            case 'l':
-                l = length;
-                break;
-            case 'w':
-                w = length;
-                break;
-            case 'h':
-                h = length;
-                break;
-            case 'a':
-                l = length;
-                w = length;
-                h = length;
-                break;
-        }
-        volume = l*w*h;
-        mass = volume*getDensity();
-    }
-    final public void scaleSide(float scale, char side){
-        switch (side){
-            case 'l':
-                l *= scale;
-                break;
-            case 'w':
-                w *= scale;
-                break;
-            case 'h':
-                h *= scale;
-                break;
-            case 'a':
-                l *= scale;
-                w *= scale;
-                h *= scale;
-                break;
-        }
-        volume = l*w*h;
+    final public void scale(float scale){
+        lx*=scale;
+        ux*=scale;
+        ly*=scale;
+        uy*=scale;
+        lz*=scale;
+        uz*=scale;
+        this.x = ux-lx;
+        this.y = uy-ly;
+        this.z = uz-lz;
+        volume = x*y*z;
         mass = volume*getDensity();
     }
     abstract float getDensity();
